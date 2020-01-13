@@ -12,7 +12,7 @@
     <!---fontawsome cdn----->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="style.css"
 </head>
 <body>
     <!---------navbar-------->
@@ -43,9 +43,16 @@
                 </div>
                 </li>
                 <li class="nav-item">
-                    <a href="order.html" class="nav-link">
-                        <span class="fas fa-shopping-bag fa-lg"></span> Orders
-                    </a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-shopping-bag fa-lg"></i> Orders
+                        </a>
+                    
+                    <div class="dropdown-menu">
+                        <a href="order.html" class="dropdown-item"> Orders Overview</a>
+                        <a href="feedback.html" class="dropdown-item"> Manage Feedback</a>
+                    </div>
+                </div>
                 </li>
             </ul>
 
@@ -65,35 +72,39 @@
         </div>
 
     </nav>
+ <!----text-white-py------------->   
     <div class="text-white py-3" style="background-color: teal;">
         <h1>&nbsp;&nbsp;<i class="fas fa-user-alt"></i> Profile</h1>
     </div>
     <br>
-    <div class="card" style="width: 18rem; margin: 10px 30px; padding: 10px 10px;">
-        <img src="Resourse/74916260_3801209276557812_3778365197958250496_o.jpg" class="card-img-top" alt="..." style="border-radius:50%;">
-        <div class="card-body" style="text-align: center; ">
-            <span class="user-name">Fazni Farook</span><br>
-            <span class="user-title">QMobiles</span>
-            <hr>
-            <div class="row" style="text-align: left;">
-                <div class="col-md-4">
-                    <label>Email :</label>
-                </div>    
-                <div class="col-md-5">    
-                    <label class="email">faznifarook@gmail.com</label>              
-                </div>
+<!--cards-->
+<section>
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="./Resourse/th.jpg" alt="card background" class="card-img">
+                <img src="./Resourse/74916260_3801209276557812_3778365197958250496_o.jpg" alt="profile image" class="profile-img">
+                <h1>Fazni Farook</h1>
+                <p class="company-name">QMobile</p>
+                
+                <form class="about">
+                    <label><p style="font-weight: bold;">Email : </p></label><label> faznifarook@gmail.com</label><br>
+                    <label><p style="font-weight: bold;">Contact No  :</p> </label><label> 0779794020</label><br>
+                    <label><p style="font-weight: bold;">Address  :  </p> </label><label> Maradana Colombo-10</label><br>
+                    <label><p style="font-weight: bold;">Username  :</p> </label><label> faznifarook</label><br>
+                </form>
+                
+                <a href="editprofile.html" class="btn">Edit Profile</a>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                </ul>
             </div>
-            <div class="row" style="text-align: left;">
-                <div class="col-md-5">
-                    <label>Address :</label>
-                </div>
-                <div class="col-md-2">
-                    <label class="address">Mardana</label>              
-                </div>
-            </div>
-          <a href="#" class="btn btn-primary">Edit Profile</a>
         </div>
-      </div>
+    </div>
+</section>
 
 <!---javaScript cdn----->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
