@@ -8,11 +8,10 @@
     <!---bootstrap cdn----->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <!---fontawsome cdn----->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/stylemyproduct.css">
 </head>
 
 <body>
@@ -33,12 +32,12 @@
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">
                             <i class="fab fa-product-hunt"></i> Products
                         </a>
                         <div class="dropdown-menu">
                             <a href="addproduct.html" class="dropdown-item"> Add Product</a>
-                            <a href="myproducts.html" class="dropdown-item"> My Products</a>
+                            <a href="myproducts.html" class="dropdown-item active"> My Products</a>
                         </div>
                     </div>
                 </li>
@@ -47,16 +46,16 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                             <i class="fas fa-shopping-bag fa-lg"></i> Orders
                         </a>
-                    <div class="dropdown-menu">
-                        <a href="order.html" class="dropdown-item"> Orders Overview</a>
-                        <a href="feedback.html" class="dropdown-item"> Manage Feedback</a>
+                        <div class="dropdown-menu">
+                            <a href="order.html" class="dropdown-item"> Orders Overview</a>
+                            <a href="feedback.html" class="dropdown-item"> Manage Feedback</a>
+                        </div>
                     </div>
-                </div>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="profile.html" class="nav-link">
                         <i class="fas fa-user-alt"></i> Profile
                     </a>
                 </li>
@@ -70,37 +69,51 @@
     </nav>
 
     <!----text-white-py------------->
-    <div class="text-white py-3" style="background-color: teal;">
-        <h1>&nbsp;&nbsp;<i class="fas fa-user-alt"></i> Profile</h1>
-    </div>
-    <br>
+    <div class="text-white py-3 mb-4" style="background-color: teal;">
+        <h1>&nbsp;&nbsp;Products</h1>
+    </div><br>
 
-    <!--Profile cards-->
-    <section>
+    <!--Single Product-->      
+    <section class="single-product">
         <div class="container">
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="./Resourse/th.jpg" alt="card background" class="card-img">
-                    <img src="./Resourse/74916260_3801209276557812_3778365197958250496_o.jpg" alt="profile image" class="profile-img">
-                    <h1>Admin Name</h1>
-                    <p class="company-name">QMobile</p>
+            <div class="row">
+                <div class="col-md-5">
+                    <div id="product-slider">
+                        <div>
+                            <div>
+                                <img src="Resourse/product/s1.jpg" class="d-block">
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h2>Samsung A10</h2>
+                    <p>Product Code: IRSC2019</p>
                     
-                    <form class="about">
-                        <label><p style="font-weight: bold;">Email : </p></label><label></label><br>
-                        <label><p style="font-weight: bold;">Contact No  :</p> </label><label></label><br>
-                        <label><p style="font-weight: bold;">Address  :  </p> </label><label></label><br>
-                        <label><p style="font-weight: bold;">Username  :</p> </label><label></label><br>
-                    </form>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
                     
-                    <a href="editprofile.html" class="btn">Edit Profile</a>
-                    <ul class="social-media">
-                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-                    </ul>
+                    <p class="price">Rs.7300.00</p>
+                    <p><b>Availability : </b>In Stock</p>
+                    <p><b>Condition : </b>New</p>
+                    <p><b>Brand : </b> Samsung</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!--product Description-->      
+    <section class="product-descrption mt-3">
+    <div class="container">
+        <h6>Product Description</h6>
+        <p>Samsung Galaxy A10 is powered by an octa-core Samsung Exynos 7884 processor. It comes with 2GB of RAM. ... 
+            The Samsung Galaxy A10 runs One UI based on Android Pie and packs 32GB of inbuilt storage that can be expanded 
+            via microSD card (up to 512GB). It was launched in Red and Blue Black colours
+        </p>
+        <hr>
         </div>
     </section>
 

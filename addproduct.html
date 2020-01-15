@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <!---------navbar-------->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">&nbsp;&nbsp;
-            <img src="./Resourse/8LWpMxMS_400x400.jpg" height="40" width="40" alt="QMobile"> Mobile
+        <a href="./index.html" class="navbar-brand">&nbsp;&nbsp;
+            <img src="./Resourse/8LWpMxMS_400x400.jpg" height="40" width="40" alt="QMobile"> QMobile
         </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
             <span class="navbar-toggler-icon"></span>
@@ -24,36 +25,33 @@
         <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="dashboard.html" class="nav-link ">
+                    <a href="./index.html" class="nav-link ">
                         <i class="fas fa-chart-bar"></i> Dashboard
                     </a>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">
                             <i class="fab fa-product-hunt"></i> Products
                         </a>
-                    
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item active"> Add Product</a>
-                        <a href="myproducts.html" class="dropdown-item"> My Products</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item active"> Add Product</a>
+                            <a href="myproducts.html" class="dropdown-item"> My Products</a>
+                        </div>
                     </div>
-                </div>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                             <i class="fas fa-shopping-bag fa-lg"></i> Orders
                         </a>
-                    
-                    <div class="dropdown-menu">
-                        <a href="order.html" class="dropdown-item"> Orders Overview</a>
-                        <a href="feedback.html" class="dropdown-item"> Manage Feedback</a>
+                        <div class="dropdown-menu">
+                            <a href="order.html" class="dropdown-item"> Orders Overview</a>
+                            <a href="feedback.html" class="dropdown-item"> Manage Feedback</a>
+                        </div>
                     </div>
-                </div>
                 </li>
             </ul>
-
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a href="profile.html" class="nav-link">
@@ -66,93 +64,80 @@
                     </a>
                 </li>               
             </ul>
-
         </div>
-
     </nav>
-    
-            <div class="text-white py-3" style="background-color: teal;">
-                <h1>&nbsp;&nbsp;Add Product</h1>
-            </div>
-            <br>
 
-            <div class="card card-body">
-                <form action="addproduct.html" method="post" enctype="multipart/form-data">
-                    <h4 class="card-header">What You're Selling</h4><br>
-                    <div class="card-text">
-                        <div class="form-group row">
-                            <label for="productName" class="col-sm-2 col-form-label">Product Name</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="productName">
-                            </div>
-                        </div>
-                    </div>
-			<div class="card-text">
-                        <div class="form-group row">
-                            <label for="productID" class="col-sm-2 col-form-label">Product ID</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="productID">
-                            </div>
-                        </div>
-                    </div>
-					<div class="card-text">
-                        <div class="form-group row">
-                            <label for="manufacturer" class="col-sm-2 col-form-label">Manufacturer</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="manufacturer">
-                            </div>
-                        </div>
-                    </div>
-                     <div class="card-text">
-                        <div class="form-group row">
-                            <label for="category" class="col-sm-2 col-form-label">Category</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="category">
-                             </div>
-                        </div>
-                    </div>
+    <!----text-white-py------------->
+    <div class="text-white py-3" style="background-color: teal;">
+        <h1>&nbsp;&nbsp;Add Product</h1>
+    </div><br>
 
-                    <div class="card-text">
-                        <div class="form-group row">
-                            <label for="price" class="col-sm-2 col-form-label">Price</label>
-                            <div class="col-sm-10">
-                                <input type="number" class="form-control" id="price">
-                             </div>
-                        </div>
+    <!----Card---->
+    <div class="card card-body">
+        <form action="addproduct.html" method="post" enctype="multipart/form-data">
+            <h4 class="card-header">What You're Selling</h4><br>
+            <div class="card-text">
+                <div class="form-group row">
+                    <label for="productName" class="col-sm-2 col-form-label">Product Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="productName">
                     </div>
-                    <div class="card-text">
-                        <div class="form-group row">
-                            <label for="quantity" class="col-sm-2 col-form-label">Quantity</label>
-                            <div class="col-sm-10">
-                                <input type="number" class="form-control" id="quantity">
-                             </div>
-                        </div>
-                    </div>
-                    <div class="card-text">
-                        <div class="form-group row">
-                            <label for="importimg" class="col-sm-2 col-form-label">Import Image</label>
-                            <div class="col-sm-10">
-								<div class="custom-file">
-									<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
-									<label class="custom-file-label" for="inputGroupFile04">Choose file</label>
-								</div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary ml-auto">Submit</button>
                 </div>
-                
-                </form>
-                
             </div>
-
-
-
-
-
-
-
-
+            <div class="card-text">
+                <div class="form-group row">
+                    <label for="productID" class="col-sm-2 col-form-label">Product ID</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="productID">
+                    </div>
+                </div>
+            </div>
+            <div class="card-text">
+                <div class="form-group row">
+                    <label for="manufacturer" class="col-sm-2 col-form-label">Manufacturer</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="manufacturer">
+                    </div>
+                </div>
+            </div>
+            <div class="card-text">
+                <div class="form-group row">
+                    <label for="category" class="col-sm-2 col-form-label">Category</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="category">
+                    </div>
+                </div>
+            </div>
+            <div class="card-text">
+                <div class="form-group row">
+                    <label for="price" class="col-sm-2 col-form-label">Price</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="price">
+                    </div>
+                </div>
+            </div>
+            <div class="card-text">
+                <div class="form-group row">
+                    <label for="quantity" class="col-sm-2 col-form-label">Quantity</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="quantity">
+                    </div>
+                </div>
+            </div>
+            <div class="card-text">
+                <div class="form-group row">
+                    <label for="importimg" class="col-sm-2 col-form-label">Import Image</label>
+                    <div class="col-sm-10">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+                            <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary ml-auto">Submit</button>
+        </form>
+    </div>
     
 <!---javaScript cdn----->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
